@@ -11,7 +11,7 @@
 #include <sys/un.h>
 #include <netdb.h>
 
-#define HOST_IP "10.0.0.2"
+#define HOST_IP "10.0.0.11"
 //#define HOST_IP "192.168.2.100"
 /*#define HOST_IP "127.0.0.1" */
 #define PORT_NO (17000)
@@ -32,7 +32,7 @@ int main(int argc, char* argv[])
 
 	if(3 != argc)
 	{
-		fprintf(stderr, "Error Arg! Useage: ./client [TestSample]\n");
+		fprintf(stderr, "Error Arg! Useage: ./client [TestSample] [802.1Q Prio]\n");
 		exit (EXIT_FAILURE);
 	}
 	s32cnt   = atoi(argv[1]);
